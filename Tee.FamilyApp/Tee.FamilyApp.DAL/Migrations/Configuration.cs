@@ -34,15 +34,13 @@ namespace Tee.FamilyApp.DAL.Migrations
                         new Link
                         {
                             Id = 1,
-                            BranchID = 1,
-                            LinkBranchID = 2,
+                            RalatedBranchId = 2,
                             LinkType = LinkType.Parent
                         },
                                         new Link
                         {
                             Id = 2,
-                            BranchID = 1,
-                            LinkBranchID = 3,
+                            RalatedBranchId = 3,
                             LinkType = LinkType.Sibling
                         }
                     }
@@ -65,8 +63,7 @@ namespace Tee.FamilyApp.DAL.Migrations
                         new Link
                         {
                             Id = 3,
-                            BranchID = 2,
-                            LinkBranchID = 1,
+                            RalatedBranchId = 1,
                             LinkType = LinkType.Child
                         }
                     }
@@ -89,15 +86,13 @@ namespace Tee.FamilyApp.DAL.Migrations
                         new Link
                         {
                             Id = 4,
-                            BranchID = 3,
-                            LinkBranchID = 1,
+                            RalatedBranchId = 1,
                             LinkType = LinkType.Sibling
                         },
                         new Link
                         {
                             Id = 5,
-                            BranchID = 3,
-                            LinkBranchID = 2,
+                            RalatedBranchId = 2,
                             LinkType = LinkType.Parent
                         }
                     },

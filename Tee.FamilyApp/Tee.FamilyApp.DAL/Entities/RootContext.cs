@@ -20,6 +20,10 @@ namespace Tee.FamilyApp.DAL.Entities
             modelBuilder.Entity<Branch>()
                         .HasRequired(s => s.BirthDetail)
                         .WithRequiredPrincipal(t => t.Branch);
+
+            modelBuilder.Entity<Branch>()
+                        .HasMany(b => b.Links)
+                        .WithRequired(l => l.Branch);
         }
     }
 }

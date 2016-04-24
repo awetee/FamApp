@@ -8,8 +8,8 @@
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public Gender Gender { get; set; }
-        public virtual ICollection<Link> Links { get; set; }
-        public virtual BirthDetail BirthDetail { get; set; }
+        public ICollection<Link> Links { get; set; }
+        public BirthDetail BirthDetail { get; set; }
 
         //public int Age
         //{
