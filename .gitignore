@@ -1,0 +1,4 @@
+Tee.FamilyApp/*/bin/*
+Tee.FamilyApp/packages/*
+Tee.FamilyApp/*/obj/Debug/*
+Tee.FamilyApp/*/bin/Debug/*
