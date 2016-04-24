@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A6EC5F57-59E3-4F0E-AD81-CECC363A2BD3}</ProjectGuid>
+    <ProjectGuid>{117471DC-DF52-40AC-A9E8-E739D2A3DADE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tee.FamilyApp.Services</RootNamespace>
-    <AssemblyName>Tee.FamilyApp.Services</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <RootNamespace>Tee.FamilyApp.Services.IntegrationTests</RootNamespace>
+    <AssemblyName>Tee.FamilyApp.Services.IntegrationTests</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,6 +38,26 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="nunit.core, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\nunit.core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.core.interfaces, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\nunit.core.interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.2.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.2.1\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.util, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\nunit.util.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NUnit.VisualStudio.TestAdapter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4cb40d35494691ac, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\NUnit.VisualStudio.TestAdapter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -50,10 +69,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IBranchRepository.cs" />
-    <Compile Include="IRepository.cs" />
+    <Compile Include="BranchRepositoryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="BranchRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -61,12 +78,16 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tee.FamilyApp.Common\Tee.FamilyApp.Common.csproj">
-      <Project>{e8e5529b-8851-4853-a884-92c90d02ff70}</Project>
+      <Project>{E8E5529B-8851-4853-A884-92C90D02FF70}</Project>
       <Name>Tee.FamilyApp.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tee.FamilyApp.DAL\Tee.FamilyApp.DAL.csproj">
-      <Project>{53d24310-6008-4475-89b9-e1ec1dfad5d8}</Project>
+      <Project>{53D24310-6008-4475-89B9-E1EC1DFAD5D8}</Project>
       <Name>Tee.FamilyApp.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tee.FamilyApp.Services\Tee.FamilyApp.Services.csproj">
+      <Project>{A6EC5F57-59E3-4F0E-AD81-CECC363A2BD3}</Project>
+      <Name>Tee.FamilyApp.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

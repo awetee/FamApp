@@ -1,8 +1,6 @@
 ﻿namespace Tee.FamilyApp.DAL.Entities
 {
-    using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
     using Tee.FamilyApp.Common.Enums;
 
     public class Branch : BaseEntity

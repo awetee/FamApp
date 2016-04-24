@@ -2,7 +2,7 @@
 {
     public interface IRepository<TEntity, TKey> where TEntity : class
     {
-        TEntity Get(TKey Id);
+        TEntity Get(TKey id);
 
         int Add(TEntity branch);
 

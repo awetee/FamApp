@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tee.FamilyApp.Api.UnitTests
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Tee.FamilyApp.API.ASP5", "Tee.FamilyApp.API.ASP5\Tee.FamilyApp.API.ASP5.xproj", "{3D435448-EBFB-4757-9168-D8F02C1E26AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tee.FamilyApp.Services.UnitTest", "Tee.FamilyApp.Services.UnitTest\Tee.FamilyApp.Services.UnitTest.csproj", "{F6E16F0D-A3D8-4D4B-8028-59B61B7239CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tee.FamilyApp.Services.IntegrationTests", "Tee.FamilyApp.Services.IntegrationTests\Tee.FamilyApp.Services.IntegrationTests.csproj", "{117471DC-DF52-40AC-A9E8-E739D2A3DADE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,11 +51,21 @@ Global
 		{3D435448-EBFB-4757-9168-D8F02C1E26AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D435448-EBFB-4757-9168-D8F02C1E26AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D435448-EBFB-4757-9168-D8F02C1E26AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6E16F0D-A3D8-4D4B-8028-59B61B7239CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6E16F0D-A3D8-4D4B-8028-59B61B7239CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6E16F0D-A3D8-4D4B-8028-59B61B7239CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6E16F0D-A3D8-4D4B-8028-59B61B7239CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{117471DC-DF52-40AC-A9E8-E739D2A3DADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117471DC-DF52-40AC-A9E8-E739D2A3DADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117471DC-DF52-40AC-A9E8-E739D2A3DADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117471DC-DF52-40AC-A9E8-E739D2A3DADE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{693C46F7-C171-4366-8D62-2E8D116E9F91} = {6EBF6D52-FD4C-4B32-B0C2-9A47BF26091E}
+		{F6E16F0D-A3D8-4D4B-8028-59B61B7239CA} = {6EBF6D52-FD4C-4B32-B0C2-9A47BF26091E}
+		{117471DC-DF52-40AC-A9E8-E739D2A3DADE} = {6EBF6D52-FD4C-4B32-B0C2-9A47BF26091E}
 	EndGlobalSection
 EndGlobal

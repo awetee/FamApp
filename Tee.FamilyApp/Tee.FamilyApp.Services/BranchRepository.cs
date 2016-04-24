@@ -1,28 +1,25 @@
 ﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using Tee.FamilyApp.DAL;
 using Tee.FamilyApp.DAL.Entities;
 
 namespace Tee.FamilyApp.Services
 {
-    public interface IBranchRepository : IRepository<Branch, int>
-    {
-        IEnumerable<Branch> FindAll();
-    }
-
     public class BranchRepository : IBranchRepository
     {
-        private RootContext context;
+        private readonly RootContext context;
 
         public BranchRepository(RootContext context)
         {
             this.context = context;
         }
 
-        public Branch Get(int Id)
+        public Branch Get(int id)
         {
-            return this.context.Branches.Find(Id);
+            var branches = this.context.Branches.ToList();
+
+            var result = this.context.Branches.SingleOrDefault(b => b.Id == id);
+            return result;
         }
 
         public int Add(Branch branch)

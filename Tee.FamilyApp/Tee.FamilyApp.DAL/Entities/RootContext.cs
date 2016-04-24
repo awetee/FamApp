@@ -1,8 +1,7 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using Tee.FamilyApp.DAL.Entities;
 
-namespace Tee.FamilyApp.DAL
+namespace Tee.FamilyApp.DAL.Entities
 {
     public class RootContext : DbContext
     {

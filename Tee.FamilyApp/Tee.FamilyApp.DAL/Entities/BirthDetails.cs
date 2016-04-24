@@ -1,7 +1,6 @@
 ﻿namespace Tee.FamilyApp.DAL.Entities
 {
     using System;
-    using System.ComponentModel.DataAnnotations;
 
     public class BirthDetail : BaseEntity
     {
