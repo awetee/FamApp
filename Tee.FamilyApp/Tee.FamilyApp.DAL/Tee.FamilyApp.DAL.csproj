@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Tee.FamilyApp.DAL</RootNamespace>
     <AssemblyName>Tee.FamilyApp.DAL</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -62,7 +62,6 @@
   <ItemGroup>
     <Compile Include="Entities\BaseEntity.cs" />
     <Compile Include="Entities\BirthDetails.cs" />
-    <Compile Include="Entities\IRepository.cs" />
     <Compile Include="Entities\Link.cs" />
     <Compile Include="Entities\RootContext.cs" />
     <Compile Include="Migrations\201604221958239_InitialMigration.cs" />

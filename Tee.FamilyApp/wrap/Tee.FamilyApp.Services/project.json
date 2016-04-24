@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net451": {
+      "wrappedProject": "../../Tee.FamilyApp.Services/Tee.FamilyApp.Services.csproj",
+      "bin": {
+        "assembly": "../../Tee.FamilyApp.Services/obj/{configuration}/Tee.FamilyApp.Services.dll",
+        "pdb": "../../Tee.FamilyApp.Services/obj/{configuration}/Tee.FamilyApp.Services.pdb"
+      },
+      "dependencies": {
+        "EntityFramework": "6.1.3"
+      }
+    }
+  }
+}

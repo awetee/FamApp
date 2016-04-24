@@ -1,51 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Tee.FamilyApp.DAL.Entities
+﻿namespace Tee.FamilyApp.Services
 {
-    public interface IRepository<T> : IDisposable where T : class
+    public interface IRepository<TEntity, TKey> where TEntity : class
     {
-        IEnumerable<T> GetAll();
+        TEntity Get(TKey Id);
 
-        T Get(int Id);
+        int Add(TEntity branch);
 
-        int Add(T entity);
+        void Update(TEntity entity);
 
-        bool Delete(int id);
-
-        bool Update(T entity);
-    }
-
-    public class Repository<T> : IRepository<T> where T : class
-    {
-        public int Add(T entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Delete(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-
-        public T Get(int Id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<T> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Update(T entity)
-        {
-            throw new NotImplementedException();
-        }
+        void Delete(TEntity entity);
     }
 }

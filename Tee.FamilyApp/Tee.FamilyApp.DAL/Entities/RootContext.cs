@@ -4,7 +4,7 @@ using Tee.FamilyApp.DAL.Entities;
 
 namespace Tee.FamilyApp.DAL
 {
-    internal class RootContext : DbContext
+    public class RootContext : DbContext
     {
         public RootContext() : base("FamilyAppModel")
         {
