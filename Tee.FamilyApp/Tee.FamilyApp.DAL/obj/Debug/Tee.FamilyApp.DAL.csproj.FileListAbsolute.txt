@@ -72,4 +72,3 @@ Z:\Users\Tee\Documents\Visual Studio 2015\Projects\FamilyTree\Tee.FamilyApp.DAL\
 \\psf\Home\Documents\Visual Studio 2015\Projects\FamApp\Tee.FamilyApp\Tee.FamilyApp.DAL\obj\Debug\Tee.FamilyApp.DAL.dll
 \\psf\Home\Documents\Visual Studio 2015\Projects\FamApp\Tee.FamilyApp\Tee.FamilyApp.DAL\obj\Debug\Tee.FamilyApp.DAL.pdb
 \\psf\Home\Documents\Visual Studio 2015\Projects\FamApp\Tee.FamilyApp\Tee.FamilyApp.DAL\obj\Debug\Tee.FamilyApp.DAL.Migrations.UpdatedRelationship.resources
-\\psf\Home\Documents\Visual Studio 2015\Projects\FamApp\Tee.FamilyApp\Tee.FamilyApp.DAL\obj\Debug\Tee.FamilyApp.DAL.Migrations.UpdatedRelationship2.resources

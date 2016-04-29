@@ -2,19 +2,21 @@
 using NUnit.Framework;
 using Tee.FamilyApp.Common.Enums;
 using Tee.FamilyApp.DAL.Entities;
+using Tee.FamilyApp.DAL.Repository;
 
 namespace Tee.FamilyApp.Services.IntegrationTests
 {
     [TestFixture]
     public class BranchRepositoryTests
     {
-        private readonly RootContext context;
-        private readonly IBranchRepository repository;
+        private readonly IBranchService service;
 
         public BranchRepositoryTests()
         {
-            this.context = new RootContext();
-            this.repository = new BranchRepository(this.context);
+            var branchRepository = new BranchRepository();
+            this.service = new BranchService(branchRepository);
+
+            var result = this.service.FindAll();
 
             var branch = new Branch
             {
@@ -40,8 +42,8 @@ namespace Tee.FamilyApp.Services.IntegrationTests
         [Test]
         public void GetShouldReturnValidResult()
         {
-            var result = this.repository.Get(1);
-            Assert.IsNotNull(result);
+            var result = this.service.FindAll();
+            Assert.IsNotEmpty(result);
         }
     }
 }

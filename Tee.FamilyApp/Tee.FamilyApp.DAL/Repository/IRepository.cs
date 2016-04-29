@@ -1,4 +1,4 @@
-﻿namespace Tee.FamilyApp.Services
+﻿namespace Tee.FamilyApp.DAL.Repository
 {
     public interface IRepository<TEntity, TKey> where TEntity : class
     {

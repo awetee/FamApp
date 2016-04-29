@@ -15,6 +15,8 @@ namespace Tee.FamilyApp.DAL.Entities
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            //Database.SetInitializer<RootContext>(new DropCreateDatabaseIfModelChanges<RootContext>());
+
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
             modelBuilder.Entity<Branch>()

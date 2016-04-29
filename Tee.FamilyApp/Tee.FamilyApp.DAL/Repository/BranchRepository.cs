@@ -3,22 +3,20 @@ using System.Data.Entity;
 using System.Linq;
 using Tee.FamilyApp.DAL.Entities;
 
-namespace Tee.FamilyApp.Services
+namespace Tee.FamilyApp.DAL.Repository
 {
     public class BranchRepository : IBranchRepository
     {
         private readonly RootContext context;
 
-        public BranchRepository(RootContext context)
+        public BranchRepository()
         {
-            this.context = context;
+            this.context = new RootContext();
         }
 
         public Branch Get(int id)
-        {
-            var branches = this.context.Branches.ToList();
-
-            var result = this.context.Branches.SingleOrDefault(b => b.Id == id);
+        { 
+            var result = context.Branches.SingleOrDefault(b => b.Id == id);
             return result;
         }
 

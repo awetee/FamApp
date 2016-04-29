@@ -72,13 +72,12 @@
     <Compile Include="Migrations\201604242104358_UpdatedRelationship.Designer.cs">
       <DependentUpon>201604242104358_UpdatedRelationship.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201604242120300_UpdatedRelationship2.cs" />
-    <Compile Include="Migrations\201604242120300_UpdatedRelationship2.Designer.cs">
-      <DependentUpon>201604242120300_UpdatedRelationship2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entities\Branch.cs" />
+    <Compile Include="Repository\BranchRepository.cs" />
+    <Compile Include="Repository\IBranchRepository.cs" />
+    <Compile Include="Repository\IRepository.cs" />
     <Compile Include="RootInitialiser.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -104,9 +103,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604242104358_UpdatedRelationship.resx">
       <DependentUpon>201604242104358_UpdatedRelationship.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604242120300_UpdatedRelationship2.resx">
-      <DependentUpon>201604242120300_UpdatedRelationship2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

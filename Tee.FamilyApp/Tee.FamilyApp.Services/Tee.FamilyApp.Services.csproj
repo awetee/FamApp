@@ -50,10 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IBranchRepository.cs" />
-    <Compile Include="IRepository.cs" />
+    <Compile Include="IBranchService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="BranchRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
