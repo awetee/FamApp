@@ -178,3 +178,7 @@ Z:\Users\Tee\Documents\Visual Studio 2015\Projects\FamApp\Tee.FamilyApp\Tee.Fami
 \\psf\Home\Documents\Visual Studio 2015\Projects\FamApp\Tee.FamilyApp\Tee.FamilyApp.API\obj\Debug\Tee.FamilyApp.API.csprojResolveAssemblyReference.cache
 \\psf\Home\Documents\Visual Studio 2015\Projects\FamApp\Tee.FamilyApp\Tee.FamilyApp.API\obj\Debug\Tee.FamilyApp.API.dll
 \\psf\Home\Documents\Visual Studio 2015\Projects\FamApp\Tee.FamilyApp\Tee.FamilyApp.API\obj\Debug\Tee.FamilyApp.API.pdb
+\\psf\Home\Documents\Visual Studio 2015\Projects\FamApp\Tee.FamilyApp\Tee.FamilyApp.API\bin\Tee.FamilyApp.Common.dll
+\\psf\Home\Documents\Visual Studio 2015\Projects\FamApp\Tee.FamilyApp\Tee.FamilyApp.API\bin\Tee.FamilyApp.DAL.dll
+\\psf\Home\Documents\Visual Studio 2015\Projects\FamApp\Tee.FamilyApp\Tee.FamilyApp.API\bin\Tee.FamilyApp.Common.pdb
+\\psf\Home\Documents\Visual Studio 2015\Projects\FamApp\Tee.FamilyApp\Tee.FamilyApp.API\bin\Tee.FamilyApp.DAL.pdb

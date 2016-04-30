@@ -1,13 +1,18 @@
 ﻿namespace Tee.FamilyApp.DAL.Repository
 {
-    public interface IRepository<TEntity, TKey> where TEntity : class
+    using System.Collections.Generic;
+    using Tee.FamilyApp.DAL.Entities;
+
+    public interface IRepository<T> where T : BaseEntity
     {
-        TEntity Get(TKey id);
+        IEnumerable<T> GetAll();
 
-        int Add(TEntity branch);
+        T Get(int id);
 
-        void Update(TEntity entity);
+        int Add(T entity);
 
-        void Delete(TEntity entity);
+        void Update(T entity);
+
+        void Delete(T entity);
     }
 }

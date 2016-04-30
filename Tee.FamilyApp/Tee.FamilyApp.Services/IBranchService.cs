@@ -11,16 +11,16 @@ namespace Tee.FamilyApp.Services
 
     public class BranchService : IBranchService
     {
-        private readonly IBranchRepository branchRepository;
+        private IRepository<Branch> branchRepository;
 
-        public BranchService(IBranchRepository branchRepository)
+        public BranchService(IRepository<Branch> branchRepository)
         {
             this.branchRepository = branchRepository;
         }
 
         public IEnumerable<Branch> FindAll()
         {
-            return this.branchRepository.FindAll();
+            return this.branchRepository.GetAll();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using NUnit.Framework;
 using Tee.FamilyApp.Common.Enums;
 using Tee.FamilyApp.DAL.Entities;
@@ -9,14 +10,11 @@ namespace Tee.FamilyApp.Services.IntegrationTests
     [TestFixture]
     public class BranchRepositoryTests
     {
-        private readonly IBranchService service;
+        private IRepository<Branch> repository;
 
         public BranchRepositoryTests()
         {
-            var branchRepository = new BranchRepository();
-            this.service = new BranchService(branchRepository);
-
-            var result = this.service.FindAll();
+            this.repository = new Repository<Branch>();
 
             var branch = new Branch
             {
@@ -42,7 +40,7 @@ namespace Tee.FamilyApp.Services.IntegrationTests
         [Test]
         public void GetShouldReturnValidResult()
         {
-            var result = this.service.FindAll();
+            var result = this.repository.GetAll().ToList();
             Assert.IsNotEmpty(result);
         }
     }
