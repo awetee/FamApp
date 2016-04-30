@@ -1,6 +1,7 @@
-﻿namespace Tee.FamilyApp.DAL.Repository
+﻿using System.Collections.Generic;
+
+namespace Tee.FamilyApp.DAL.Repository
 {
-    using System.Collections.Generic;
     using Tee.FamilyApp.DAL.Entities;
 
     public interface IRepository<T> where T : BaseEntity

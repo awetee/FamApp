@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Tee.FamilyApp.Services.UnitTests")]
+[assembly: AssemblyTitle("Tee.FamilyApp.Api.IntegrationTests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Tee.FamilyApp.Services.UnitTests")]
+[assembly: AssemblyProduct("Tee.FamilyApp.Api.IntegrationTests")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("117471dc-df52-40ac-a9e8-e739d2a3dade")]
+[assembly: Guid("8d030f54-8229-44d6-8328-b22475b04dbe")]
 
 // Version information for an assembly consists of the following four values:
 //

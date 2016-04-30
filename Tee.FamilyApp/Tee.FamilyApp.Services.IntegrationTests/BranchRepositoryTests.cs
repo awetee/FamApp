@@ -1,11 +1,8 @@
-﻿using System;
-using System.Linq;
-using NUnit.Framework;
-using Tee.FamilyApp.Common.Enums;
+﻿using NUnit.Framework;
 using Tee.FamilyApp.DAL.Entities;
 using Tee.FamilyApp.DAL.Repository;
 
-namespace Tee.FamilyApp.Services.IntegrationTests
+namespace Tee.FamilyApp.Services.UnitTests
 {
     [TestFixture]
     public class BranchRepositoryTests
@@ -15,32 +12,12 @@ namespace Tee.FamilyApp.Services.IntegrationTests
         public BranchRepositoryTests()
         {
             this.repository = new Repository<Branch>();
-
-            var branch = new Branch
-            {
-                FirstName = "James",
-                LastName = "Brown",
-                Gender = Gender.Male
-            };
-
-            var birthDetail = new BirthDetail
-            {
-                Country = "America",
-                DateOfBirth = new DateTime(1950, 1, 2),
-                Province = "Unknown",
-                Town = "Unknown"
-            };
-
-            var link = new Link
-            {
-                LinkType = LinkType.Child
-            };
         }
 
         [Test]
         public void GetShouldReturnValidResult()
         {
-            var result = this.repository.GetAll().ToList();
+            var result = this.repository.GetAll();
             Assert.IsNotEmpty(result);
         }
     }

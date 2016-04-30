@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Data.Entity;
-using Tee.FamilyApp.DAL.Entities;
-
-namespace Tee.FamilyApp.DAL.Repository
+﻿namespace Tee.FamilyApp.DAL.Repository
 {
+    using System.Collections.Generic;
+    using System.Data.Entity;
+    using System.Linq;
+    using Tee.FamilyApp.DAL.Entities;
+
     public class Repository<T> : IRepository<T> where T : BaseEntity
     {
         private RootContext db;
@@ -17,7 +18,7 @@ namespace Tee.FamilyApp.DAL.Repository
 
         public IEnumerable<T> GetAll()
         {
-            return this.table;
+            return this.table.ToList();
         }
 
         public T Get(int id)

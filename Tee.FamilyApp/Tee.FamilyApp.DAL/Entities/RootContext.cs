@@ -5,7 +5,7 @@ namespace Tee.FamilyApp.DAL.Entities
 {
     public class RootContext : DbContext
     {
-        public RootContext() : base("FamilyAppModel")
+        public RootContext() : base("RootContext")
         {
         }
 
@@ -15,8 +15,6 @@ namespace Tee.FamilyApp.DAL.Entities
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            //Database.SetInitializer<RootContext>(new DropCreateDatabaseIfModelChanges<RootContext>());
-
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
             modelBuilder.Entity<Branch>()
