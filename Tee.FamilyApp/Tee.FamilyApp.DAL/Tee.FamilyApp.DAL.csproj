@@ -63,6 +63,10 @@
     <Compile Include="Migrations\201604242104358_UpdatedRelationship.Designer.cs">
       <DependentUpon>201604242104358_UpdatedRelationship.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606071807445_DisabledEF.cs" />
+    <Compile Include="Migrations\201606071807445_DisabledEF.Designer.cs">
+      <DependentUpon>201606071807445_DisabledEF.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entities\Branch.cs" />
@@ -92,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604242104358_UpdatedRelationship.resx">
       <DependentUpon>201604242104358_UpdatedRelationship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606071807445_DisabledEF.resx">
+      <DependentUpon>201606071807445_DisabledEF.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

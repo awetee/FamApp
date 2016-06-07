@@ -1,5 +1,4 @@
 ﻿using System.Data.Entity;
-using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace Tee.FamilyApp.DAL.Entities
 {
@@ -9,21 +8,21 @@ namespace Tee.FamilyApp.DAL.Entities
         {
         }
 
-        public DbSet<BirthDetail> BirthDetails { get; set; }
-        public DbSet<Branch> Branches { get; set; }
-        public DbSet<Link> Links { get; set; }
+        //public DbSet<BirthDetail> BirthDetails { get; set; }
+        //public DbSet<Branch> Branches { get; set; }
+        //public DbSet<Link> Links { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            //modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
-            modelBuilder.Entity<Branch>()
-                        .HasRequired(s => s.BirthDetail)
-                        .WithRequiredPrincipal(t => t.Branch);
+            //modelBuilder.Entity<Branch>()
+            //            .HasRequired(s => s.BirthDetail)
+            //            .WithRequiredPrincipal(t => t.Branch);
 
-            modelBuilder.Entity<Branch>()
-                        .HasMany(b => b.Links)
-                        .WithRequired(l => l.Branch);
+            //modelBuilder.Entity<Branch>()
+            //            .HasMany(b => b.Links)
+            //            .WithRequired(l => l.Branch);
         }
     }
 }
