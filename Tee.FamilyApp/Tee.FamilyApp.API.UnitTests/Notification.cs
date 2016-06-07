@@ -1,4 +1,4 @@
-﻿namespace Tee.FamilyApp.Tests
+﻿namespace Tee.FamilyApp.Api.UnitTests
 {
     public class Notification
     {

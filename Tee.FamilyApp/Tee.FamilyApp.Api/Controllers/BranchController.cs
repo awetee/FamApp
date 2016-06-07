@@ -7,11 +7,11 @@ namespace Tee.FamilyApp.Api.Controllers
 {
     public class BranchController : ApiController
     {
-        private BranchService branchService;
+        private readonly IBranchService branchService;
 
-        public BranchController()
+        public BranchController(IBranchService branchService)
         {
-            this.branchService = new BranchService();
+            this.branchService = branchService;
         }
 
         // GET: api/Branch
@@ -21,24 +21,27 @@ namespace Tee.FamilyApp.Api.Controllers
         }
 
         // GET: api/Branch/5
-        public string Get(int id)
+        public Branch Get(int id)
         {
-            return "value";
+            return this.branchService.GetBranch(id);
         }
 
         // POST: api/Branch
-        public void Post([FromBody]string value)
+        public bool Post(Branch branch)
         {
+            return this.branchService.AddBranch(branch);
         }
 
         // PUT: api/Branch/5
-        public void Put(int id, [FromBody]string value)
+        public void Put(Branch branch)
         {
+            this.branchService.UpdateBranch(branch);
         }
 
         // DELETE: api/Branch/5
         public void Delete(int id)
         {
+            this.branchService.Remove(id);
         }
     }
 }
