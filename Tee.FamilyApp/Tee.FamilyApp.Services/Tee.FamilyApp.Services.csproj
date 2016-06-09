@@ -46,7 +46,9 @@
   <ItemGroup>
     <Compile Include="BranchService.cs" />
     <Compile Include="IBranchService.cs" />
+    <Compile Include="IInviteService.cs" />
     <Compile Include="INotificationService.cs" />
+    <Compile Include="InviteService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

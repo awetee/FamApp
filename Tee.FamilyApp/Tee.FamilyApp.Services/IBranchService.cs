@@ -9,6 +9,8 @@ namespace Tee.FamilyApp.Services
 
         IEnumerable<Branch> GetAllBranches();
 
+        Branch GetBranchByUserName(string userName);
+
         IEnumerable<Branch> GetRelatedBranches(int branchId);
 
         bool AddBranch(Branch branch);

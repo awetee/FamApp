@@ -53,19 +53,16 @@
   <ItemGroup>
     <Compile Include="Entities\BaseEntity.cs" />
     <Compile Include="Entities\BirthDetails.cs" />
+    <Compile Include="Entities\Invite.cs" />
     <Compile Include="Entities\Link.cs" />
     <Compile Include="Entities\RootContext.cs" />
-    <Compile Include="Migrations\201604221958239_InitialMigration.cs" />
-    <Compile Include="Migrations\201604221958239_InitialMigration.Designer.cs">
-      <DependentUpon>201604221958239_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201606091313413_InitialDB.cs" />
+    <Compile Include="Migrations\201606091313413_InitialDB.Designer.cs">
+      <DependentUpon>201606091313413_InitialDB.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201604242104358_UpdatedRelationship.cs" />
-    <Compile Include="Migrations\201604242104358_UpdatedRelationship.Designer.cs">
-      <DependentUpon>201604242104358_UpdatedRelationship.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201606071807445_DisabledEF.cs" />
-    <Compile Include="Migrations\201606071807445_DisabledEF.Designer.cs">
-      <DependentUpon>201606071807445_DisabledEF.cs</DependentUpon>
+    <Compile Include="Migrations\201606091323227_AddedInviteToModel.cs" />
+    <Compile Include="Migrations\201606091323227_AddedInviteToModel.Designer.cs">
+      <DependentUpon>201606091323227_AddedInviteToModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -91,14 +88,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201604221958239_InitialMigration.resx">
-      <DependentUpon>201604221958239_InitialMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201606091313413_InitialDB.resx">
+      <DependentUpon>201606091313413_InitialDB.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604242104358_UpdatedRelationship.resx">
-      <DependentUpon>201604242104358_UpdatedRelationship.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606071807445_DisabledEF.resx">
-      <DependentUpon>201606071807445_DisabledEF.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201606091323227_AddedInviteToModel.resx">
+      <DependentUpon>201606091323227_AddedInviteToModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

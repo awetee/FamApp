@@ -8,6 +8,6 @@
         public DateTime DateOfBirth { get; set; }
         public string Province { get; set; }
         public string Town { get; set; }
-        public Branch Branch { get; set; }
+        public byte BranchId { get; set; }
     }
 }

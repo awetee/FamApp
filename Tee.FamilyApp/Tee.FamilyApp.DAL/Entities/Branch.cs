@@ -10,5 +10,6 @@
         public Gender Gender { get; set; }
         public List<Link> Links { get; set; }
         public BirthDetail BirthDetail { get; set; }
+        public string Username { get; set; }
     }
 }

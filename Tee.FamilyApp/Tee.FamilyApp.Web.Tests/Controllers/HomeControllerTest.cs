@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Tee.FamilyApp.Web;
 using Tee.FamilyApp.Web.Controllers;
 
 namespace Tee.FamilyApp.Web.Tests.Controllers
@@ -35,7 +30,7 @@ namespace Tee.FamilyApp.Web.Tests.Controllers
             ViewResult result = controller.About() as ViewResult;
 
             // Assert
-            Assert.AreEqual("Your application description page.", result.ViewBag.Message);
+            Assert.AreEqual("Discover your roots.", result.ViewBag.Message);
         }
 
         [TestMethod]

@@ -179,6 +179,13 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InvitationController.cs" />
+    <Compile Include="Migrations\201606091317554_InitialDB.cs" />
+    <Compile Include="Migrations\201606091317554_InitialDB.Designer.cs">
+      <DependentUpon>201606091317554_InitialDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\InvitationViewModel.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -245,6 +252,8 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Invitation\SendInvite.cshtml" />
+    <Content Include="Views\Invitation\SendInviteConfirmation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -256,6 +265,25 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tee.FamilyApp.Common\Tee.FamilyApp.Common.csproj">
+      <Project>{e8e5529b-8851-4853-a884-92c90d02ff70}</Project>
+      <Name>Tee.FamilyApp.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tee.FamilyApp.DAL\Tee.FamilyApp.DAL.csproj">
+      <Project>{53d24310-6008-4475-89b9-e1ec1dfad5d8}</Project>
+      <Name>Tee.FamilyApp.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tee.FamilyApp.Services\Tee.FamilyApp.Services.csproj">
+      <Project>{A6EC5F57-59E3-4F0E-AD81-CECC363A2BD3}</Project>
+      <Name>Tee.FamilyApp.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201606091317554_InitialDB.resx">
+      <DependentUpon>201606091317554_InitialDB.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

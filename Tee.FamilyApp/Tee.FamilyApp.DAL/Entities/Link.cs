@@ -4,8 +4,8 @@
 
     public class Link : BaseEntity
     {
-        public int RalatedBranchId { get; set; }
         public LinkType LinkType { get; set; }
-        public Branch Branch { get; set; }
+        public int BranchId { get; set; }
+        public int RalatedBranchId { get; set; }
     }
 }

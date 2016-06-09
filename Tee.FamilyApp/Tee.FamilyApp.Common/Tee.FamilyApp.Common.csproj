@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InviteStatus.cs" />
     <Compile Include="Models\BaseViewModel.cs" />
     <Compile Include="Models\BirthDetailViewModel.cs" />
     <Compile Include="Models\BranchViewModel.cs" />

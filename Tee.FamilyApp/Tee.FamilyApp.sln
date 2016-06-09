@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tee.FamilyApp.Web", "Tee.Fa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tee.FamilyApp.Web.Tests", "Tee.FamilyApp.Web.Tests\Tee.FamilyApp.Web.Tests.csproj", "{16DFCCE7-B8C9-47F6-8A6E-DBD6D25E7F33}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tee.FamilyApp.IntegrationTests.DAL", "Tee.FamilyApp.IntegrationTests.DAL\Tee.FamilyApp.IntegrationTests.DAL.csproj", "{E79E0560-9E0E-46C8-85D5-F6A9C154CC30}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CI|Any CPU = CI|Any CPU
@@ -76,6 +78,12 @@ Global
 		{16DFCCE7-B8C9-47F6-8A6E-DBD6D25E7F33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16DFCCE7-B8C9-47F6-8A6E-DBD6D25E7F33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16DFCCE7-B8C9-47F6-8A6E-DBD6D25E7F33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E79E0560-9E0E-46C8-85D5-F6A9C154CC30}.CI|Any CPU.ActiveCfg = Release|Any CPU
+		{E79E0560-9E0E-46C8-85D5-F6A9C154CC30}.CI|Any CPU.Build.0 = Release|Any CPU
+		{E79E0560-9E0E-46C8-85D5-F6A9C154CC30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E79E0560-9E0E-46C8-85D5-F6A9C154CC30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E79E0560-9E0E-46C8-85D5-F6A9C154CC30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E79E0560-9E0E-46C8-85D5-F6A9C154CC30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,5 +92,6 @@ Global
 		{117471DC-DF52-40AC-A9E8-E739D2A3DADE} = {6EBF6D52-FD4C-4B32-B0C2-9A47BF26091E}
 		{693C46F7-C171-4366-8D62-2E8D116E9F91} = {6EBF6D52-FD4C-4B32-B0C2-9A47BF26091E}
 		{16DFCCE7-B8C9-47F6-8A6E-DBD6D25E7F33} = {6EBF6D52-FD4C-4B32-B0C2-9A47BF26091E}
+		{E79E0560-9E0E-46C8-85D5-F6A9C154CC30} = {6EBF6D52-FD4C-4B32-B0C2-9A47BF26091E}
 	EndGlobalSection
 EndGlobal

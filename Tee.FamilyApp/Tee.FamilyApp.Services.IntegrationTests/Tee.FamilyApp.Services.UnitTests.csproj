@@ -47,6 +47,7 @@
       <HintPath>..\packages\FluentAssertions.4.5.0\lib\net45\FluentAssertions.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="NSubstitute, Version=1.10.0.0, Culture=neutral, PublicKeyToken=92dd2e9066daa5ca, processorArchitecture=MSIL">
       <HintPath>..\packages\NSubstitute.1.10.0.0\lib\net45\NSubstitute.dll</HintPath>
       <Private>True</Private>
@@ -83,6 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BranchRepositoryTests.cs" />
+    <Compile Include="InviteServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -98,10 +100,17 @@
       <Project>{53D24310-6008-4475-89B9-E1EC1DFAD5D8}</Project>
       <Name>Tee.FamilyApp.DAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Tee.FamilyApp.IntegrationTests.DAL\Tee.FamilyApp.IntegrationTests.DAL.csproj">
+      <Project>{E79E0560-9E0E-46C8-85D5-F6A9C154CC30}</Project>
+      <Name>Tee.FamilyApp.IntegrationTests.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Tee.FamilyApp.Services\Tee.FamilyApp.Services.csproj">
       <Project>{A6EC5F57-59E3-4F0E-AD81-CECC363A2BD3}</Project>
       <Name>Tee.FamilyApp.Services</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

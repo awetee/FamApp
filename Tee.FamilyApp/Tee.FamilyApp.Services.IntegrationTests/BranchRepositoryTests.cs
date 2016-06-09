@@ -1,27 +1,35 @@
 ﻿using FluentAssertions;
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Tee.FamilyApp.DAL.Entities;
-using Tee.FamilyApp.DAL.Repository;
+using Tee.FamilyApp.IntegrationTests.DAL.Repository;
 
 namespace Tee.FamilyApp.Services.UnitTests
 {
-    [TestFixture]
+    [TestClass]
     public class BranchRepositoryTests
     {
-        private BranchService branchService;
+        private readonly IBranchService _branchService;
 
-        [SetUp]
-        public void Setup()
+        public BranchRepositoryTests()
         {
-            this.branchService = new BranchService(new Repository<Branch>());
+            var testRepo = new TestRepository<Branch>();
+            this._branchService = new BranchService(testRepo);
         }
 
-        [Test]
+        [TestMethod]
         public void GetShouldReturnValidResult()
         {
-            var result = this.branchService.GetAllBranches();
+            var result = _branchService.GetAllBranches();
 
             result.Should().NotBeNullOrEmpty();
+        }
+
+        [TestMethod]
+        public void GetBranchByUserNAmeShouldReturnValidResult()
+        {
+            var result = this._branchService.GetBranchByUserName("awedupe07@gmail.com");
+
+            Assert.AreEqual(1, result.Id);
         }
     }
 }
