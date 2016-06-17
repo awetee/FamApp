@@ -8,42 +8,42 @@
 
     public class Repository<T> : IRepository<T>, IDisposable where T : BaseEntity
     {
-        private RootContext db;
-        private DbSet<T> table;
+        private DbContext context;
+        private DbSet<T> dbSet;
 
-        public Repository()
+        public Repository(DbContext ctx)
         {
-            this.db = new RootContext();
-            this.table = this.db.Set<T>();
+            this.context = ctx;
+            this.dbSet = this.context.Set<T>();
         }
 
         public IEnumerable<T> GetAll()
         {
-            return this.table.ToList();
+            return this.dbSet.ToList();
         }
 
         public T Get(int id)
         {
-            return this.table.Find(id);
+            return this.dbSet.Find(id);
         }
 
         public int Add(T entity)
         {
-            this.table.Add(entity);
-            this.db.SaveChanges();
+            this.dbSet.Add(entity);
+            this.context.SaveChanges();
             return entity.Id;
         }
 
         public void Update(T entity)
         {
-            this.db.Entry(entity).State = EntityState.Modified;
-            this.db.SaveChanges();
+            this.context.Entry(entity).State = EntityState.Modified;
+            this.context.SaveChanges();
         }
 
         public void Delete(T entity)
         {
-            this.db.Entry(entity).State = EntityState.Deleted;
-            this.db.SaveChanges();
+            this.context.Entry(entity).State = EntityState.Deleted;
+            this.context.SaveChanges();
         }
 
         #region IDisposable Support

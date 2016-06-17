@@ -1,9 +1,10 @@
-﻿using Tee.FamilyApp.DAL.Entities;
+﻿using Tee.FamilyApp.Common;
+using Tee.FamilyApp.DAL.Entities;
 
-namespace Tee.FamilyApp.Web.Controllers
+namespace Tee.FamilyApp.Services
 {
     public interface IInviteService
     {
-        bool SendInvitation(Invite invite);
+        OperationResult SendInvitation(Invite invite);
     }
 }

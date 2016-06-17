@@ -1,7 +1,6 @@
-﻿using System;
+﻿using Tee.FamilyApp.Common;
 using Tee.FamilyApp.DAL.Entities;
 using Tee.FamilyApp.DAL.Repository;
-using Tee.FamilyApp.Web.Controllers;
 
 namespace Tee.FamilyApp.Services
 {
@@ -9,7 +8,7 @@ namespace Tee.FamilyApp.Services
     {
         private readonly IRepository<Invite> InviteRepository;
 
-        public InviteService() : this(new Repository<Invite>())
+        public InviteService() : this(new Repository<Invite>(new RootContext()))
         {
         }
 
@@ -18,19 +17,19 @@ namespace Tee.FamilyApp.Services
             this.InviteRepository = inviteRepository;
         }
 
-        public bool SendInvitation(Invite invite)
+        public OperationResult SendInvitation(Invite invite)
         {
-            bool result = false;
+            var result = new OperationResult();
 
-            try
+            if (invite == null)
             {
-                this.InviteRepository.Add(invite);
-                result = true;
+                result.Succeded = false;
+                result.Messages.Add("Invite is null");
+
+                return result;
             }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+
+            this.InviteRepository.Add(invite);
 
             return result;
         }

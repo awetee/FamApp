@@ -10,7 +10,7 @@ namespace Tee.FamilyApp.Services
     {
         private readonly IRepository<Branch> branchRepository;
 
-        public BranchService() : this(new Repository<Branch>())
+        public BranchService() : this(new Repository<Branch>(new RootContext()))
         {
         }
 
@@ -31,25 +31,21 @@ namespace Tee.FamilyApp.Services
 
         public IEnumerable<Branch> GetRelatedBranches(int branchId)
         {
-            throw new System.NotImplementedException();
+            // get the links having this ID as BranchID using the link service
+            // THen you need to get the related branch in each link
+            return new List<Branch>();
         }
 
         public bool AddBranch(Branch branch)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public Branch GetBranchByUserName(string userName)
         {
-            Branch branch;
-            try
-            {
-                branch = this.branchRepository.GetAll().Where(b => b.Username == userName).Single();
-            }
-            catch (Exception ex)
-            {
-                throw new ArgumentException(ex.Message, "username");
-            }
+            var branch = new Branch();
+
+            branch = this.branchRepository.GetAll().Where(b => b.Username == userName).Single();
 
             return branch;
         }

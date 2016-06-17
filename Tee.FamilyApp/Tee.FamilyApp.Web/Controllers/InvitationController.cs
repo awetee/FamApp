@@ -37,14 +37,14 @@ namespace Tee.FamilyApp.Web.Controllers
 
             Invite invite = MapToInvite(model);
 
-            var inviteSent = this.InvitationService.SendInvitation(invite);
+            var result = this.InvitationService.SendInvitation(invite);
 
-            if (inviteSent)
+            if (result.Succeded)
             {
                 return RedirectToAction("SendInviteConfirmation");
             }
 
-            this.ViewBag.ErrorMessage = "Unable to send invite";
+            this.ModelState.AddModelError("model", result.Messages[0]);
 
             return RedirectToAction("SendInvite", model);
         }
@@ -58,7 +58,7 @@ namespace Tee.FamilyApp.Web.Controllers
         {
             var branch = this.BranchService.GetBranchByUserName(User.Identity.Name);
 
-            // we probably need an auto mapper here
+            //TODO: we probably need an auto mapper here
             var invite = new Invite
             {
                 BranchId = branch.Id,

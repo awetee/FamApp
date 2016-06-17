@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,13 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IDbContext.cs" />
     <Compile Include="InviteStatus.cs" />
     <Compile Include="Models\BaseViewModel.cs" />
     <Compile Include="Models\BirthDetailViewModel.cs" />
     <Compile Include="Models\BranchViewModel.cs" />
+    <Compile Include="Models\InvitationViewModel.cs" />
     <Compile Include="Models\LinkViewModel.cs" />
     <Compile Include="Enums\Gender.cs" />
     <Compile Include="Enums\LinkType.cs" />
+    <Compile Include="OperationResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

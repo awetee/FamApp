@@ -1,10 +1,11 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using Tee.FamilyApp.Common.Interfaces;
 using Tee.FamilyApp.DAL.Entities;
 
 namespace Tee.FamilyApp.IntegrationTests.DAL.Entities
 {
-    public class RootTestContext : DbContext
+    public class RootTestContext : DbContext, IDbContext
     {
         public RootTestContext() : base("RootTestContext")
         {

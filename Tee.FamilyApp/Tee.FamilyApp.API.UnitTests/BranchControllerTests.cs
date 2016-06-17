@@ -19,26 +19,6 @@ namespace Tee.FamilyApp.Api.UnitTests
         {
             branchService = Substitute.For<IBranchService>();
             controller = new BranchController(branchService);
-
-            //var branch = new Branch
-            //{
-            //    FirstName = "James",
-            //    LastName = "Brown",
-            //    Gender = Gender.Male
-            //};
-
-            //var birthDetail = new BirthDetail
-            //{
-            //    Country = "America",
-            //    DateOfBirth = new DateTime(1950, 1, 2),
-            //    Province = "Unknown",
-            //    Town = "Unknown"
-            //};
-
-            //var link = new Link
-            //{
-            //    LinkType = LinkType.Child
-            //};
         }
 
         [Test]
@@ -88,10 +68,10 @@ namespace Tee.FamilyApp.Api.UnitTests
         }
 
         [Test]
-        public void GivenThat_PostPassedAnInValidBranch_PostShouldReturnFalse()
+        public void GivenAnInValidBranch_PostShouldReturnFalse()
         {
             // Arrange
-            var newBranch = new Branch { Id = 1 };
+            Branch newBranch = null;
             this.branchService.AddBranch(newBranch).Returns(false);
 
             // Act

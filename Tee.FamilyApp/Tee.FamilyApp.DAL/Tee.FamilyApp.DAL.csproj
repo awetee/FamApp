@@ -64,6 +64,10 @@
     <Compile Include="Migrations\201606091323227_AddedInviteToModel.Designer.cs">
       <DependentUpon>201606091323227_AddedInviteToModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606102245593_UpdatedBaseEntity.cs" />
+    <Compile Include="Migrations\201606102245593_UpdatedBaseEntity.Designer.cs">
+      <DependentUpon>201606102245593_UpdatedBaseEntity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entities\Branch.cs" />
@@ -93,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201606091323227_AddedInviteToModel.resx">
       <DependentUpon>201606091323227_AddedInviteToModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606102245593_UpdatedBaseEntity.resx">
+      <DependentUpon>201606102245593_UpdatedBaseEntity.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
