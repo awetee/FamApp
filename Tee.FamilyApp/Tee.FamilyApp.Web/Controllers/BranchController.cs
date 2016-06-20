@@ -10,12 +10,15 @@ namespace Tee.FamilyApp.Web.Controllers
     {
         private readonly IBranchService BranchService;
 
-        public BranchController()
+        public BranchController(IBranchService branchService)
         {
-            BranchService = new BranchService();
+            BranchService = branchService;
         }
 
-        // GET: Branch
+        public BranchController() : this(new BranchService())
+        {
+        }
+
         public ActionResult Index()
         {
             var model = GetBranches();
@@ -25,7 +28,19 @@ namespace Tee.FamilyApp.Web.Controllers
 
         public ActionResult ProfilePage(int id)
         {
-            return View();
+            var branch = this.BranchService.GetBranch(id);
+            BranchViewModel model = MapToViewmodel(branch);
+            return View(model);
+        }
+
+        private static BranchViewModel MapToViewmodel(DAL.Entities.Branch branch)
+        {
+            return new BranchViewModel
+            {
+                Id = branch.Id,
+                FirstName = branch.FirstName,
+                LastName = branch.LastName
+            };
         }
 
         private List<BranchViewModel> GetBranches()
@@ -36,12 +51,7 @@ namespace Tee.FamilyApp.Web.Controllers
 
             foreach (var branch in branches)
             {
-                var item = new BranchViewModel
-                {
-                    Id = branch.Id,
-                    FirstName = branch.FirstName,
-                    LastName = branch.LastName
-                };
+                var item = MapToViewmodel(branch);
 
                 model.Add(item);
             }

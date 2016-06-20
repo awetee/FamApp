@@ -21,7 +21,7 @@ namespace Tee.FamilyApp.Services
 
         public Branch GetBranch(int branchId)
         {
-            throw new System.NotImplementedException();
+            return this.branchRepository.Get(branchId);
         }
 
         public IEnumerable<Branch> GetAllBranches()

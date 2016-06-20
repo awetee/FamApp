@@ -261,6 +261,7 @@
     <Content Include="Views\Invitation\SendInvite.cshtml" />
     <Content Include="Views\Invitation\SendInviteConfirmation.cshtml" />
     <Content Include="Views\Branch\Index.cshtml" />
+    <Content Include="Views\Branch\ProfilePage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

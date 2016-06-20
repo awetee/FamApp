@@ -10,10 +10,14 @@ namespace Tee.FamilyApp.Web.Controllers
         private readonly IBranchService BranchService;
         private readonly IInviteService InvitationService;
 
-        public InvitationController()
+        public InvitationController(IBranchService branchService, IInviteService invitationService)
         {
-            this.InvitationService = new InviteService();
-            this.BranchService = new BranchService();
+            this.InvitationService = invitationService;
+            this.BranchService = branchService;
+        }
+
+        public InvitationController() : this(new BranchService(), new InviteService())
+        {
         }
 
         [Authorize]
