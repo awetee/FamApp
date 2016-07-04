@@ -185,13 +185,12 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BranchController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\InvitationController.cs" />
+    <Compile Include="Controllers\InviteController.cs" />
     <Compile Include="Migrations\201606091317554_InitialDB.cs" />
     <Compile Include="Migrations\201606091317554_InitialDB.Designer.cs">
       <DependentUpon>201606091317554_InitialDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\InvitationViewModel.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -258,8 +257,8 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Invitation\SendInvite.cshtml" />
-    <Content Include="Views\Invitation\SendInviteConfirmation.cshtml" />
+    <Content Include="Views\Invite\SendInvite.cshtml" />
+    <Content Include="Views\Invite\SendInviteConfirmation.cshtml" />
     <Content Include="Views\Branch\Index.cshtml" />
     <Content Include="Views\Branch\ProfilePage.cshtml" />
   </ItemGroup>

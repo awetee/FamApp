@@ -1,10 +1,13 @@
-﻿using Tee.FamilyApp.Common;
-using Tee.FamilyApp.DAL.Entities;
+﻿using System.Collections.Generic;
+using Tee.FamilyApp.Common;
+using Tee.FamilyApp.Common.Models;
 
 namespace Tee.FamilyApp.Services
 {
     public interface IInviteService
     {
-        OperationResult SendInvitation(Invite invite);
+        OperationResult SendInvitation(InviteViewModel invite, string userName);
+
+        IEnumerable<InviteViewModel> GetPendingInvitesForUser(string username);
     }
 }
