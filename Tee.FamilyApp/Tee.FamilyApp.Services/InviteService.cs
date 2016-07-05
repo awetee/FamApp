@@ -22,6 +22,11 @@ namespace Tee.FamilyApp.Services
 
         public IBranchService BranchService { get; private set; }
 
+        public IEnumerable<Invite> GetPendingReceivedInvitesByBranch(int branchId)
+        {
+            return this.InviteRepository.GetAll().Where(i => i.BranchId == branchId);
+        }
+
         public IEnumerable<InviteViewModel> GetPendingInvitesForUser(string userName)
         {
             var user = this.BranchService.GetBranchByUserName(userName);

@@ -1,5 +1,7 @@
-﻿using System.Web.Mvc;
+﻿using System.Collections.Generic;
+using System.Web.Mvc;
 using Tee.FamilyApp.Common.Models;
+using Tee.FamilyApp.DAL.Entities;
 using Tee.FamilyApp.Services;
 
 namespace Tee.FamilyApp.Web.Controllers
@@ -18,7 +20,11 @@ namespace Tee.FamilyApp.Web.Controllers
         {
         }
 
-        // GET: Invitations
+        public IEnumerable<Invite> GetPendingInvitesForBranch(int branchId)
+        {
+            return InviteService.GetPendingReceivedInvitesByBranch(branchId);
+        }
+
         public ActionResult SendInvite()
         {
             return View();

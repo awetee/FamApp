@@ -44,6 +44,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.SqlServer.Compact.4.0.8876.1\lib\net40\System.Data.SqlServerCe.dll</HintPath>
@@ -55,7 +56,9 @@
     <Compile Include="Entities\BirthDetails.cs" />
     <Compile Include="Entities\Invite.cs" />
     <Compile Include="Entities\Link.cs" />
+    <Compile Include="Entities\PublicInvite.cs" />
     <Compile Include="Entities\RootContext.cs" />
+    <Compile Include="Entities\RootsInvite.cs" />
     <Compile Include="Migrations\201606091313413_InitialDB.cs" />
     <Compile Include="Migrations\201606091313413_InitialDB.Designer.cs">
       <DependentUpon>201606091313413_InitialDB.cs</DependentUpon>
@@ -67,6 +70,10 @@
     <Compile Include="Migrations\201606102245593_UpdatedBaseEntity.cs" />
     <Compile Include="Migrations\201606102245593_UpdatedBaseEntity.Designer.cs">
       <DependentUpon>201606102245593_UpdatedBaseEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607052116276_InviteModelUpdate.cs" />
+    <Compile Include="Migrations\201607052116276_InviteModelUpdate.Designer.cs">
+      <DependentUpon>201607052116276_InviteModelUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -100,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201606102245593_UpdatedBaseEntity.resx">
       <DependentUpon>201606102245593_UpdatedBaseEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607052116276_InviteModelUpdate.resx">
+      <DependentUpon>201607052116276_InviteModelUpdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

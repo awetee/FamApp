@@ -15,7 +15,8 @@ namespace Tee.FamilyApp.DAL.Entities
         public DbSet<BirthDetail> BirthDetails { get; set; }
         public DbSet<Branch> Branches { get; set; }
         public DbSet<Link> Links { get; set; }
-        public DbSet<Invite> Invites { get; set; }
+        public DbSet<PublicInvite> PublicInvites { get; set; }
+        public DbSet<RootsInvite> RootsInvites { get; set; }
 
         public override int SaveChanges()
         {
