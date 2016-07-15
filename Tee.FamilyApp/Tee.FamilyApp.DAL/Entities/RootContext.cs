@@ -12,11 +12,10 @@ namespace Tee.FamilyApp.DAL.Entities
         {
         }
 
-        public DbSet<BirthDetail> BirthDetails { get; set; }
         public DbSet<Branch> Branches { get; set; }
+        public DbSet<BirthDetail> BirthDetails { get; set; }
         public DbSet<Link> Links { get; set; }
-        public DbSet<PublicInvite> PublicInvites { get; set; }
-        public DbSet<RootsInvite> RootsInvites { get; set; }
+        public DbSet<Invite> Invites { get; set; }
 
         public override int SaveChanges()
         {
@@ -40,10 +39,13 @@ namespace Tee.FamilyApp.DAL.Entities
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
             modelBuilder.Entity<Branch>()
-                        .HasRequired(s => s.BirthDetail);
+                        .HasMany(b => b.Links);
 
             modelBuilder.Entity<Branch>()
-                        .HasMany(b => b.Links);
+                .HasMany(b => b.Invites);
+
+            modelBuilder.Entity<Branch>()
+                .HasRequired(b => b.BirthDetail);
         }
     }
 }

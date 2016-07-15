@@ -5,8 +5,11 @@ namespace Tee.FamilyApp.DAL.Entities
 {
     public class Invite : BaseEntity
     {
-        public int BranchId { get; set; }
+        public InviteType Type { get; set; }
         public LinkType LinkType { get; set; }
         public InviteStatus Status { get; set; }
+        public int InvitedBranchId { get; set; }
+        public string EmailAddress { get; set; }
+        public int BranchId { get; set; }
     }
 }

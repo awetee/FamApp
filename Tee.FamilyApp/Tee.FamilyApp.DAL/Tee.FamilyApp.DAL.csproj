@@ -56,9 +56,7 @@
     <Compile Include="Entities\BirthDetails.cs" />
     <Compile Include="Entities\Invite.cs" />
     <Compile Include="Entities\Link.cs" />
-    <Compile Include="Entities\PublicInvite.cs" />
     <Compile Include="Entities\RootContext.cs" />
-    <Compile Include="Entities\RootsInvite.cs" />
     <Compile Include="Migrations\201606091313413_InitialDB.cs" />
     <Compile Include="Migrations\201606091313413_InitialDB.Designer.cs">
       <DependentUpon>201606091313413_InitialDB.cs</DependentUpon>
@@ -74,6 +72,10 @@
     <Compile Include="Migrations\201607052116276_InviteModelUpdate.cs" />
     <Compile Include="Migrations\201607052116276_InviteModelUpdate.Designer.cs">
       <DependentUpon>201607052116276_InviteModelUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607152039106_ChangeInviteNames.cs" />
+    <Compile Include="Migrations\201607152039106_ChangeInviteNames.Designer.cs">
+      <DependentUpon>201607152039106_ChangeInviteNames.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -110,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201607052116276_InviteModelUpdate.resx">
       <DependentUpon>201607052116276_InviteModelUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607152039106_ChangeInviteNames.resx">
+      <DependentUpon>201607152039106_ChangeInviteNames.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

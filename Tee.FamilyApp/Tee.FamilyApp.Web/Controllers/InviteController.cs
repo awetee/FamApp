@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Web.Mvc;
-using Tee.FamilyApp.Common.Models;
 using Tee.FamilyApp.DAL.Entities;
 using Tee.FamilyApp.Services;
 
@@ -37,7 +36,7 @@ namespace Tee.FamilyApp.Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult SendInvite(InviteViewModel model)
+        public ActionResult SendInvite(Invite model)
         {
             ModelState.Remove("BranchName");
 

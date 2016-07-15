@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Tee.FamilyApp.Common;
-using Tee.FamilyApp.Common.Models;
 using Tee.FamilyApp.DAL.Entities;
 using Tee.FamilyApp.DAL.Repository;
 
@@ -27,20 +26,14 @@ namespace Tee.FamilyApp.Services
             return this.InviteRepository.GetAll().Where(i => i.BranchId == branchId);
         }
 
-        public IEnumerable<InviteViewModel> GetPendingInvitesForUser(string userName)
+        public IEnumerable<Invite> GetPendingInvitesForUser(string userName)
         {
             var user = this.BranchService.GetBranchByUserName(userName);
-            var result = new List<InviteViewModel>();
-            var pendingInvites = this.InviteRepository.GetAll().Where(i => i.BranchId == user.Id && i.Status == InviteStatus.Sent);
-            foreach (var invite in pendingInvites)
-            {
-                result.Add(this.MapToInviteViewModel(invite));
-            }
 
-            return result;
+            return this.InviteRepository.GetAll().Where(i => i.BranchId == user.Id && i.Status == InviteStatus.Sent);
         }
 
-        public OperationResult SendInvitation(InviteViewModel invite, string userName)
+        public OperationResult SendInvitation(Invite invite, string userName)
         {
             var result = new OperationResult();
 
@@ -52,36 +45,9 @@ namespace Tee.FamilyApp.Services
                 return result;
             }
 
-            this.InviteRepository.Add(MapToInvite(invite, userName));
+            this.InviteRepository.Add(invite);
 
             return result;
-        }
-
-        private Invite MapToInvite(InviteViewModel model, string userName)
-        {
-            var branch = this.BranchService.GetBranchByUserName(userName);
-
-            //TODO: we probably need an auto mapper here
-            var invite = new Invite
-            {
-                BranchId = branch.Id,
-                EmailAddress = model.Email,
-                LinkType = model.LinkType,
-                Status = InviteStatus.Sent
-            };
-
-            return invite;
-        }
-
-        private InviteViewModel MapToInviteViewModel(Invite model)
-        {
-            var invite = new InviteViewModel
-            {
-                Email = model.EmailAddress,
-                LinkType = model.LinkType
-            };
-
-            return invite;
         }
     }
 }
