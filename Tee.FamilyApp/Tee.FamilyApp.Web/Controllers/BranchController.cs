@@ -15,10 +15,6 @@ namespace Tee.FamilyApp.Web.Controllers
             BranchService = branchService;
         }
 
-        public BranchController() : this(new BranchService())
-        {
-        }
-
         public ActionResult Index()
         {
             var model = GetBranches();

@@ -1,5 +1,4 @@
 ﻿using Ninject.Modules;
-using Tee.FamilyApp.Services;
 
 namespace Tee.FamilyApp.Web.App_Start
 {
@@ -7,7 +6,6 @@ namespace Tee.FamilyApp.Web.App_Start
     {
         public override void Load()
         {
-            this.Bind<IBranchService>().To<BranchService>();
         }
     }
 }

@@ -15,10 +15,6 @@ namespace Tee.FamilyApp.Web.Controllers
             this.InviteService = invitationService;
         }
 
-        public InviteController() : this(new InviteService())
-        {
-        }
-
         [HttpGet]
         public IEnumerable<Invite> GetPendingInvitesForBranch(int branchId)
         {
