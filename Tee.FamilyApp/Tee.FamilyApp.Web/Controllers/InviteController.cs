@@ -19,20 +19,22 @@ namespace Tee.FamilyApp.Web.Controllers
         {
         }
 
+        [HttpGet]
         public IEnumerable<Invite> GetPendingInvitesForBranch(int branchId)
         {
             return InviteService.GetPendingReceivedInvitesByBranch(branchId);
-        }
-
-        public ActionResult SendInvite()
-        {
-            return View();
         }
 
         public ActionResult Index()
         {
             var model = this.InviteService.GetPendingInvitesForUser(this.User.Identity.Name);
             return this.View(model);
+        }
+
+        [HttpGet]
+        public ActionResult SendInvite()
+        {
+            return View();
         }
 
         [HttpPost]

@@ -1,7 +1,6 @@
 namespace Tee.FamilyApp.IntegrationTests.DAL.Migrations
 {
     using System;
-    using System.Collections.Generic;
     using System.Data.Entity.Migrations;
     using Common.Enums;
     using Entities;
@@ -30,21 +29,21 @@ namespace Tee.FamilyApp.IntegrationTests.DAL.Migrations
                       Province = "",
                       Town = ""
                   },
-                  Links = new List<Link>
-                    {
-                        new Link
-                        {
-                            Id = 1,
-                            RalatedBranchId = 2,
-                            LinkType = LinkType.Parent
-                        },
-                                        new Link
-                        {
-                            Id = 2,
-                            RalatedBranchId = 3,
-                            LinkType = LinkType.Sibling
-                        }
-                    },
+                  //Links = new List<Link>
+                  //  {
+                  //      new Link
+                  //      {
+                  //          Id = 1,
+                  //          RalatedBranchId = 2,
+                  //          LinkType = LinkType.Parent
+                  //      },
+                  //                      new Link
+                  //      {
+                  //          Id = 2,
+                  //          RalatedBranchId = 3,
+                  //          LinkType = LinkType.Sibling
+                  //      }
+                  //  },
                   Username = "awedupe07@gmail.com"
               }
               //new Branch

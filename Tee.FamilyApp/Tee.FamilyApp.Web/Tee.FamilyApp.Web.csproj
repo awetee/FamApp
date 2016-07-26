@@ -278,6 +278,10 @@
       <Project>{e8e5529b-8851-4853-a884-92c90d02ff70}</Project>
       <Name>Tee.FamilyApp.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Tee.FamilyApp.DAL\Tee.FamilyApp.DAL.csproj">
+      <Project>{53D24310-6008-4475-89B9-E1EC1DFAD5D8}</Project>
+      <Name>Tee.FamilyApp.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Tee.FamilyApp.Services\Tee.FamilyApp.Services.csproj">
       <Project>{A6EC5F57-59E3-4F0E-AD81-CECC363A2BD3}</Project>
       <Name>Tee.FamilyApp.Services</Name>
