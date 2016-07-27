@@ -1,6 +1,6 @@
 ﻿namespace Tee.FamilyApp.DAL.Entities
 {
-    using Tee.FamilyApp.Common.Enums;
+    using Common.Enums;
 
     public class Link : BaseEntity
     {

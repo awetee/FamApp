@@ -91,16 +91,6 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tee.FamilyApp.Common\Tee.FamilyApp.Common.csproj">
-      <Project>{e8e5529b-8851-4853-a884-92c90d02ff70}</Project>
-      <Name>Tee.FamilyApp.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Tee.FamilyApp.DAL\Tee.FamilyApp.DAL.csproj">
-      <Project>{53d24310-6008-4475-89b9-e1ec1dfad5d8}</Project>
-      <Name>Tee.FamilyApp.DAL</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Migrations\201606091313413_InitialDB.resx">
       <DependentUpon>201606091313413_InitialDB.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +100,16 @@
     <EmbeddedResource Include="Migrations\201606111416175_UpdatedBaseEntity.resx">
       <DependentUpon>201606111416175_UpdatedBaseEntity.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tee.FamilyApp.Common\Tee.FamilyApp.Common.csproj">
+      <Project>{E8E5529B-8851-4853-A884-92C90D02FF70}</Project>
+      <Name>Tee.FamilyApp.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tee.FamilyApp.DAL\Tee.FamilyApp.DAL.csproj">
+      <Project>{53D24310-6008-4475-89B9-E1EC1DFAD5D8}</Project>
+      <Name>Tee.FamilyApp.DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

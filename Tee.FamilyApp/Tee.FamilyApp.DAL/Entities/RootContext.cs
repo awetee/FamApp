@@ -38,14 +38,14 @@ namespace Tee.FamilyApp.DAL.Entities
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
-            modelBuilder.Entity<Branch>()
-                        .HasMany(b => b.Links);
+            //modelBuilder.Entity<Branch>()
+            //            .HasMany(b => b.Links);
 
-            modelBuilder.Entity<Branch>()
-                .HasMany(b => b.Invites);
+            //modelBuilder.Entity<Branch>()
+            //    .HasMany(b => b.Invites);
 
-            modelBuilder.Entity<Branch>()
-                .HasRequired(b => b.BirthDetail);
+            //modelBuilder.Entity<Branch>()
+            //    .HasRequired(b => b.BirthDetail);
         }
     }
 }

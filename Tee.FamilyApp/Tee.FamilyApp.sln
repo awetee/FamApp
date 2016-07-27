@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tee.FamilyApp.Common", "\\psf\Home\Documents\Visual Studio 2015\Projects\FamApp\Tee.FamilyApp\Tee.FamilyApp.Common\Tee.FamilyApp.Common.csproj", "{E8E5529B-8851-4853-A884-92C90D02FF70}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tee.FamilyApp.DAL", "\\psf\Home\Documents\Visual Studio 2015\Projects\FamApp\Tee.FamilyApp\Tee.FamilyApp.DAL\Tee.FamilyApp.DAL.csproj", "{53D24310-6008-4475-89B9-E1EC1DFAD5D8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tee.FamilyApp.Services", "Tee.FamilyApp.Services\Tee.FamilyApp.Services.csproj", "{A6EC5F57-59E3-4F0E-AD81-CECC363A2BD3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6EBF6D52-FD4C-4B32-B0C2-9A47BF26091E}"
@@ -23,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tee.FamilyApp.Web.Tests", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tee.FamilyApp.IntegrationTests.DAL", "Tee.FamilyApp.IntegrationTests.DAL\Tee.FamilyApp.IntegrationTests.DAL.csproj", "{E79E0560-9E0E-46C8-85D5-F6A9C154CC30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tee.FamilyApp.DAL", "Tee.FamilyApp.DAL\Tee.FamilyApp.DAL.csproj", "{53D24310-6008-4475-89B9-E1EC1DFAD5D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tee.FamilyApp.Common", "Tee.FamilyApp.Common\Tee.FamilyApp.Common.csproj", "{E8E5529B-8851-4853-A884-92C90D02FF70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CI|Any CPU = CI|Any CPU
@@ -30,18 +30,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E8E5529B-8851-4853-A884-92C90D02FF70}.CI|Any CPU.ActiveCfg = Release|Any CPU
-		{E8E5529B-8851-4853-A884-92C90D02FF70}.CI|Any CPU.Build.0 = Release|Any CPU
-		{E8E5529B-8851-4853-A884-92C90D02FF70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E8E5529B-8851-4853-A884-92C90D02FF70}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E8E5529B-8851-4853-A884-92C90D02FF70}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E8E5529B-8851-4853-A884-92C90D02FF70}.Release|Any CPU.Build.0 = Release|Any CPU
-		{53D24310-6008-4475-89B9-E1EC1DFAD5D8}.CI|Any CPU.ActiveCfg = Release|Any CPU
-		{53D24310-6008-4475-89B9-E1EC1DFAD5D8}.CI|Any CPU.Build.0 = Release|Any CPU
-		{53D24310-6008-4475-89B9-E1EC1DFAD5D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{53D24310-6008-4475-89B9-E1EC1DFAD5D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{53D24310-6008-4475-89B9-E1EC1DFAD5D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{53D24310-6008-4475-89B9-E1EC1DFAD5D8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A6EC5F57-59E3-4F0E-AD81-CECC363A2BD3}.CI|Any CPU.ActiveCfg = Release|Any CPU
 		{A6EC5F57-59E3-4F0E-AD81-CECC363A2BD3}.CI|Any CPU.Build.0 = Release|Any CPU
 		{A6EC5F57-59E3-4F0E-AD81-CECC363A2BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -84,6 +72,18 @@ Global
 		{E79E0560-9E0E-46C8-85D5-F6A9C154CC30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E79E0560-9E0E-46C8-85D5-F6A9C154CC30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E79E0560-9E0E-46C8-85D5-F6A9C154CC30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53D24310-6008-4475-89B9-E1EC1DFAD5D8}.CI|Any CPU.ActiveCfg = Release|Any CPU
+		{53D24310-6008-4475-89B9-E1EC1DFAD5D8}.CI|Any CPU.Build.0 = Release|Any CPU
+		{53D24310-6008-4475-89B9-E1EC1DFAD5D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53D24310-6008-4475-89B9-E1EC1DFAD5D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53D24310-6008-4475-89B9-E1EC1DFAD5D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53D24310-6008-4475-89B9-E1EC1DFAD5D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8E5529B-8851-4853-A884-92C90D02FF70}.CI|Any CPU.ActiveCfg = Release|Any CPU
+		{E8E5529B-8851-4853-A884-92C90D02FF70}.CI|Any CPU.Build.0 = Release|Any CPU
+		{E8E5529B-8851-4853-A884-92C90D02FF70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8E5529B-8851-4853-A884-92C90D02FF70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8E5529B-8851-4853-A884-92C90D02FF70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8E5529B-8851-4853-A884-92C90D02FF70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

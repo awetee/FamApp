@@ -57,25 +57,9 @@
     <Compile Include="Entities\Invite.cs" />
     <Compile Include="Entities\Link.cs" />
     <Compile Include="Entities\RootContext.cs" />
-    <Compile Include="Migrations\201606091313413_InitialDB.cs" />
-    <Compile Include="Migrations\201606091313413_InitialDB.Designer.cs">
-      <DependentUpon>201606091313413_InitialDB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201606091323227_AddedInviteToModel.cs" />
-    <Compile Include="Migrations\201606091323227_AddedInviteToModel.Designer.cs">
-      <DependentUpon>201606091323227_AddedInviteToModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201606102245593_UpdatedBaseEntity.cs" />
-    <Compile Include="Migrations\201606102245593_UpdatedBaseEntity.Designer.cs">
-      <DependentUpon>201606102245593_UpdatedBaseEntity.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201607052116276_InviteModelUpdate.cs" />
-    <Compile Include="Migrations\201607052116276_InviteModelUpdate.Designer.cs">
-      <DependentUpon>201607052116276_InviteModelUpdate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201607152039106_ChangeInviteNames.cs" />
-    <Compile Include="Migrations\201607152039106_ChangeInviteNames.Designer.cs">
-      <DependentUpon>201607152039106_ChangeInviteNames.cs</DependentUpon>
+    <Compile Include="Migrations\201607271937208_Initial-DB.cs" />
+    <Compile Include="Migrations\201607271937208_Initial-DB.Designer.cs">
+      <DependentUpon>201607271937208_Initial-DB.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,27 +79,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tee.FamilyApp.Common\Tee.FamilyApp.Common.csproj">
-      <Project>{e8e5529b-8851-4853-a884-92c90d02ff70}</Project>
-      <Name>Tee.FamilyApp.Common</Name>
-    </ProjectReference>
+    <EmbeddedResource Include="Migrations\201607271937208_Initial-DB.resx">
+      <DependentUpon>201607271937208_Initial-DB.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201606091313413_InitialDB.resx">
-      <DependentUpon>201606091313413_InitialDB.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606091323227_AddedInviteToModel.resx">
-      <DependentUpon>201606091323227_AddedInviteToModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606102245593_UpdatedBaseEntity.resx">
-      <DependentUpon>201606102245593_UpdatedBaseEntity.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201607052116276_InviteModelUpdate.resx">
-      <DependentUpon>201607052116276_InviteModelUpdate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201607152039106_ChangeInviteNames.resx">
-      <DependentUpon>201607152039106_ChangeInviteNames.cs</DependentUpon>
-    </EmbeddedResource>
+    <ProjectReference Include="..\Tee.FamilyApp.Common\Tee.FamilyApp.Common.csproj">
+      <Project>{E8E5529B-8851-4853-A884-92C90D02FF70}</Project>
+      <Name>Tee.FamilyApp.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

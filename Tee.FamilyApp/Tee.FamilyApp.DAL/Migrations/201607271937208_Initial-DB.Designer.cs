@@ -7,13 +7,13 @@ namespace Tee.FamilyApp.DAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class InviteModelUpdate : IMigrationMetadata
+    public sealed partial class InitialDB : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InviteModelUpdate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialDB));
         
         string IMigrationMetadata.Id
         {
-            get { return "201607052116276_InviteModelUpdate"; }
+            get { return "201607271937208_Initial-DB"; }
         }
         
         string IMigrationMetadata.Source

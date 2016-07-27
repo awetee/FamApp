@@ -288,7 +288,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tee.FamilyApp.Common\Tee.FamilyApp.Common.csproj">
-      <Project>{e8e5529b-8851-4853-a884-92c90d02ff70}</Project>
+      <Project>{E8E5529B-8851-4853-A884-92C90D02FF70}</Project>
       <Name>Tee.FamilyApp.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tee.FamilyApp.DAL\Tee.FamilyApp.DAL.csproj">
