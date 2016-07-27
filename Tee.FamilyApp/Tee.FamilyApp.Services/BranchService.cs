@@ -10,10 +10,6 @@ namespace Tee.FamilyApp.Services
     {
         private readonly IRepository<Branch> branchRepository;
 
-        public BranchService() : this(new Repository<Branch>(new RootContext()))
-        {
-        }
-
         public BranchService(IRepository<Branch> brachRepository)
         {
             this.branchRepository = brachRepository;

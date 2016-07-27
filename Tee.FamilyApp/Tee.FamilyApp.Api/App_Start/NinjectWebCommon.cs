@@ -4,8 +4,10 @@
 namespace Tee.FamilyApp.Api.App_Start
 {
     using System;
+    using System.Data.Entity;
     using System.Web;
-
+    using DAL.Entities;
+    using DAL.Repository;
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 
     using Ninject;
@@ -63,6 +65,8 @@ namespace Tee.FamilyApp.Api.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind<IBranchService>().To<BranchService>();
+            kernel.Bind<DbContext>().To<RootContext>();
+            kernel.Bind(typeof(IRepository<>)).To(typeof(Repository<>));
         }
     }
 }

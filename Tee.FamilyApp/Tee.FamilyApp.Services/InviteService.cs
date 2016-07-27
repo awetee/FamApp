@@ -10,10 +10,6 @@ namespace Tee.FamilyApp.Services
     {
         private readonly IRepository<Invite> InviteRepository;
 
-        public InviteService() : this(new Repository<Invite>(new RootContext()))
-        {
-        }
-
         public InviteService(IRepository<Invite> inviteRepository)
         {
             this.InviteRepository = inviteRepository;
