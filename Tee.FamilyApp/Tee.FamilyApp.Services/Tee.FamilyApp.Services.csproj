@@ -54,7 +54,6 @@
     <Compile Include="IInviteService.cs" />
     <Compile Include="INotificationService.cs" />
     <Compile Include="InviteService.cs" />
-    <Compile Include="MapperService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
