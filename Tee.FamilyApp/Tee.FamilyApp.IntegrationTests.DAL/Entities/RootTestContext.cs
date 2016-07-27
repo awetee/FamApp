@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using Tee.FamilyApp.Common.Entities;
 using Tee.FamilyApp.Common.Interfaces;
-using Tee.FamilyApp.DAL.Entities;
 
 namespace Tee.FamilyApp.IntegrationTests.DAL.Entities
 {

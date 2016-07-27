@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Tee.FamilyApp.Common;
-using Tee.FamilyApp.DAL.Entities;
+using Tee.FamilyApp.Common.Entities;
 
 namespace Tee.FamilyApp.Services
 {

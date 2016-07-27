@@ -1,4 +1,4 @@
-﻿namespace Tee.FamilyApp.DAL.Entities
+﻿namespace Tee.FamilyApp.Common.Entities
 {
     using System;
 

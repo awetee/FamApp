@@ -1,8 +1,8 @@
 ﻿using NSubstitute;
 using NUnit.Framework;
+using Tee.FamilyApp.Common.Entities;
 using Tee.FamilyApp.Common.Enums;
 using Tee.FamilyApp.Common.Interfaces;
-using Tee.FamilyApp.DAL.Entities;
 using Tee.FamilyApp.DAL.Repository;
 using Tee.FamilyApp.Services;
 

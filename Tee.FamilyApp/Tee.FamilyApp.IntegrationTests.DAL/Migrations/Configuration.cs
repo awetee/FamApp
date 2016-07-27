@@ -2,9 +2,9 @@ namespace Tee.FamilyApp.IntegrationTests.DAL.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
+    using Common.Entities;
     using Common.Enums;
     using Entities;
-    using FamilyApp.DAL.Entities;
 
     internal sealed class Configuration : DbMigrationsConfiguration<RootTestContext>
     {

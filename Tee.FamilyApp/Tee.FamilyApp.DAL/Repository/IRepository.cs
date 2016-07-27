@@ -2,7 +2,7 @@
 
 namespace Tee.FamilyApp.DAL.Repository
 {
-    using Tee.FamilyApp.DAL.Entities;
+    using Common.Entities;
 
     public interface IRepository<T> where T : BaseEntity
     {

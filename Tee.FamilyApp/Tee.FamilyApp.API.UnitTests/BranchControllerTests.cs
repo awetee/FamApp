@@ -3,7 +3,7 @@ using FluentAssertions;
 using NSubstitute;
 using NUnit.Framework;
 using Tee.FamilyApp.Api.Controllers;
-using Tee.FamilyApp.DAL.Entities;
+using Tee.FamilyApp.Common.Entities;
 using Tee.FamilyApp.Services;
 
 namespace Tee.FamilyApp.Api.UnitTests

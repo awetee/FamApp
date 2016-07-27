@@ -2,8 +2,8 @@
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NSubstitute;
+using Tee.FamilyApp.Common.Entities;
 using Tee.FamilyApp.Common.Interfaces;
-using Tee.FamilyApp.DAL.Entities;
 using Tee.FamilyApp.DAL.Repository;
 
 namespace Tee.FamilyApp.Services.UnitTests

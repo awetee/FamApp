@@ -2,6 +2,7 @@
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
+using Tee.FamilyApp.Common.Entities;
 using Tee.FamilyApp.Common.Interfaces;
 
 namespace Tee.FamilyApp.DAL.Entities

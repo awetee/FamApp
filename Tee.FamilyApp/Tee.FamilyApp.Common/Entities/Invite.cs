@@ -1,7 +1,6 @@
-﻿using Tee.FamilyApp.Common;
-using Tee.FamilyApp.Common.Enums;
+﻿using Tee.FamilyApp.Common.Enums;
 
-namespace Tee.FamilyApp.DAL.Entities
+namespace Tee.FamilyApp.Common.Entities
 {
     public class Invite : BaseEntity
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Tee.FamilyApp.DAL.Entities;
+using Tee.FamilyApp.Common.Entities;
 using Tee.FamilyApp.DAL.Repository;
 
 namespace Tee.FamilyApp.Services

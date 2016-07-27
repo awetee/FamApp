@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using System.Data.Entity;
     using System.Linq;
-    using Entities;
+    using Common.Entities;
 
     public class Repository<T> : IRepository<T>, IDisposable where T : BaseEntity
     {

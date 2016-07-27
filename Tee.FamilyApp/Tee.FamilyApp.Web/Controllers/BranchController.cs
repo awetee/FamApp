@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Web.Mvc;
+using Tee.FamilyApp.Common.Entities;
 using Tee.FamilyApp.Common.Models;
 using Tee.FamilyApp.Services;
 
@@ -29,7 +30,7 @@ namespace Tee.FamilyApp.Web.Controllers
             return View(model);
         }
 
-        private static BranchViewModel MapToViewmodel(DAL.Entities.Branch branch)
+        private static BranchViewModel MapToViewmodel(Branch branch)
         {
             return new BranchViewModel
             {

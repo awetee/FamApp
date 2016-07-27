@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Web.Mvc;
-using Tee.FamilyApp.DAL.Entities;
+using Tee.FamilyApp.Common.Entities;
 using Tee.FamilyApp.Services;
 
 namespace Tee.FamilyApp.Web.Controllers

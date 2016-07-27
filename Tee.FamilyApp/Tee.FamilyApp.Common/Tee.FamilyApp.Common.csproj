@@ -42,6 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\BirthDetails.cs" />
+    <Compile Include="Entities\Branch.cs" />
+    <Compile Include="Entities\Invite.cs" />
+    <Compile Include="Entities\Link.cs" />
     <Compile Include="Enums\InviteType.cs" />
     <Compile Include="Interfaces\IDbContext.cs" />
     <Compile Include="InviteStatus.cs" />
