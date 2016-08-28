@@ -8,23 +8,17 @@ namespace Tee.FamilyApp.Web.Controllers
     [Authorize]
     public class InviteController : Controller
     {
-        private readonly IInviteService InviteService;
+        private readonly IInviteService _inviteService;
 
         public InviteController(IInviteService invitationService)
         {
-            this.InviteService = invitationService;
+            this._inviteService = invitationService;
         }
 
         [HttpGet]
         public IEnumerable<Invite> GetPendingInvitesForBranch(int branchId)
         {
-            return InviteService.GetPendingReceivedInvitesByBranch(branchId);
-        }
-
-        public ActionResult Index()
-        {
-            var model = this.InviteService.GetPendingInvitesForUser(this.User.Identity.Name);
-            return this.View(model);
+            return _inviteService.GetPendingReceivedInvitesByBranch(branchId);
         }
 
         [HttpGet]
@@ -44,7 +38,7 @@ namespace Tee.FamilyApp.Web.Controllers
                 return RedirectToAction("SendInvite", model);
             }
 
-            var result = this.InviteService.SendInvitation(model, User.Identity.Name);
+            var result = this._inviteService.SendInvitation(model, User.Identity.Name);
 
             if (result.Succeded)
             {

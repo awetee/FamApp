@@ -88,3 +88,5 @@ C:\Users\Tee\Documents\Visual Studio 2015\Projects\FamApp\Tee.FamilyApp\Tee.Fami
 C:\Users\Tee\Documents\Visual Studio 2015\Projects\FamApp\Tee.FamilyApp\Tee.FamilyApp.DAL\obj\Debug\Tee.FamilyApp.DAL.csproj.GenerateResource.Cache
 C:\Users\Tee\Documents\Visual Studio 2015\Projects\FamApp\Tee.FamilyApp\Tee.FamilyApp.DAL\obj\Debug\Tee.FamilyApp.DAL.dll
 C:\Users\Tee\Documents\Visual Studio 2015\Projects\FamApp\Tee.FamilyApp\Tee.FamilyApp.DAL\obj\Debug\Tee.FamilyApp.DAL.pdb
+C:\Users\Tee\Documents\Visual Studio 2015\Projects\FamApp\Tee.FamilyApp\Tee.FamilyApp.DAL\bin\Debug\Ninject.dll
+C:\Users\Tee\Documents\Visual Studio 2015\Projects\FamApp\Tee.FamilyApp\Tee.FamilyApp.DAL\bin\Debug\Ninject.xml

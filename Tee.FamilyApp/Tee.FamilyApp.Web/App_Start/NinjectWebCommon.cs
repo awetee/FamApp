@@ -1,3 +1,7 @@
+using Ninject.Modules;
+using Tee.FamilyApp.DAL.Dependencies;
+using Tee.FamilyApp.Services.Dependencies;
+
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(Tee.FamilyApp.Web.App_Start.NinjectWebCommon), "Start")]
 [assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(Tee.FamilyApp.Web.App_Start.NinjectWebCommon), "Stop")]
 
@@ -9,7 +13,6 @@ namespace Tee.FamilyApp.Web.App_Start
 
     using Ninject;
     using Ninject.Web.Common;
-    using Services;
 
     public static class NinjectWebCommon
     {
@@ -39,7 +42,14 @@ namespace Tee.FamilyApp.Web.App_Start
         /// <returns>The created kernel.</returns>
         private static IKernel CreateKernel()
         {
-            var kernel = new StandardKernel();
+            var modules = new INinjectModule[]
+            {
+                new ServiceModule(),
+                new DalModule(),
+            };
+
+            var kernel = new StandardKernel(modules);
+
             try
             {
                 kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
@@ -61,8 +71,6 @@ namespace Tee.FamilyApp.Web.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Bind<IBranchService>().To<BranchService>();
-            kernel.Bind<IInviteService>().To<InviteService>();
         }
     }
 }

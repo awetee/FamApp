@@ -5,7 +5,6 @@ namespace Tee.FamilyApp.DAL.Migrations
     using System.Data.Entity.Migrations;
     using Common.Entities;
     using Common.Enums;
-    using Entities;
 
     internal sealed class Configuration : DbMigrationsConfiguration<RootContext>
     {

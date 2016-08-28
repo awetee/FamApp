@@ -5,7 +5,7 @@ using System.Linq;
 using Tee.FamilyApp.Common.Entities;
 using Tee.FamilyApp.Common.Interfaces;
 
-namespace Tee.FamilyApp.DAL.Entities
+namespace Tee.FamilyApp.DAL
 {
     public class RootContext : DbContext, IDbContext
     {
