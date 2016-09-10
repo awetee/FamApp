@@ -9,8 +9,6 @@ namespace Tee.FamilyApp.Common.Models
 
         public int InvitedBranchId { get; set; }
 
-        public int MyProperty { get; set; }
-
         [Required]
         [EmailAddress]
         public string Email { get; set; }

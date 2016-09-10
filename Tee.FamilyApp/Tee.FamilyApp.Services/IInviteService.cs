@@ -6,7 +6,7 @@ namespace Tee.FamilyApp.Services
 {
     public interface IInviteService
     {
-        OperationResult SendInvitation(Invite invite, string userName);
+        OperationResult SendInvitation(Invite invites);
 
         IEnumerable<Invite> GetPendingInvitesForUser(string username);
 

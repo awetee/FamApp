@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Web.Mvc;
 using Tee.FamilyApp.Common.Entities;
+using Tee.FamilyApp.Common.Enums;
 using Tee.FamilyApp.Services;
 
 namespace Tee.FamilyApp.Web.Controllers
@@ -9,10 +10,12 @@ namespace Tee.FamilyApp.Web.Controllers
     public class InviteController : Controller
     {
         private readonly IInviteService _inviteService;
+        private readonly IBranchService _branchService;
 
-        public InviteController(IInviteService invitationService)
+        public InviteController(IInviteService invitationService, IBranchService branchService)
         {
             this._inviteService = invitationService;
+            _branchService = branchService;
         }
 
         [HttpGet]
@@ -38,7 +41,10 @@ namespace Tee.FamilyApp.Web.Controllers
                 return RedirectToAction("SendInvite", model);
             }
 
-            var result = this._inviteService.SendInvitation(model, User.Identity.Name);
+            model.BranchId = this._branchService.GetBranchByUserName(User.Identity.Name).Id;
+            model.Type = InviteType.Email;
+
+            var result = this._inviteService.SendInvitation(model);
 
             if (result.Succeded)
             {

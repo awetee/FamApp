@@ -4,6 +4,11 @@ namespace Tee.FamilyApp.Common.Entities
 {
     public class Invite : BaseEntity
     {
+        public Invite()
+        {
+            Type = InviteType.Branch;
+        }
+
         public InviteType Type { get; set; }
         public LinkType LinkType { get; set; }
         public InviteStatus Status { get; set; }

@@ -8,6 +8,7 @@ namespace Tee.FamilyApp.Services.Dependencies
         {
             Bind<IBranchService>().To<BranchService>();
             Bind<IInviteService>().To<InviteService>();
+            Bind<IEmailService>().To<EmailService>();
         }
     }
 }

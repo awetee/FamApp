@@ -26,7 +26,7 @@ namespace Tee.FamilyApp.Web.Controllers
         public ActionResult ProfilePage(int id)
         {
             var branch = this.BranchService.GetBranch(id);
-            BranchViewModel model = MapToViewmodel(branch);
+            var model = MapToViewmodel(branch);
             return View(model);
         }
 
