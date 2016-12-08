@@ -1,0 +1,10 @@
+﻿namespace Tee.FamilyApp.Common.Core.Models
+{
+    public class BirthDetailViewModel : BaseViewModel
+    {
+        public string Country { get; set; }
+        public string DateOfBirth { get; set; }
+        public string Province { get; set; }
+        public string Town { get; set; }
+    }
+}

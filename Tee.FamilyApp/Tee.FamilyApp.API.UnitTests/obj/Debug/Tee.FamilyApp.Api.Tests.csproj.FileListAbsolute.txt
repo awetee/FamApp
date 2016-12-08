@@ -1,5 +1,0 @@
-Z:\Users\Tee\Documents\Visual Studio 2015\Projects\FamilyTree\Tests\Tee.FamilyApp.Tests\bin\Debug\Tee.FamilyApp.Tests.dll
-Z:\Users\Tee\Documents\Visual Studio 2015\Projects\FamilyTree\Tests\Tee.FamilyApp.Tests\bin\Debug\Tee.FamilyApp.Tests.pdb
-Z:\Users\Tee\Documents\Visual Studio 2015\Projects\FamilyTree\Tests\Tee.FamilyApp.Tests\obj\Debug\Tee.FamilyApp.Api.Tests.csprojResolveAssemblyReference.cache
-Z:\Users\Tee\Documents\Visual Studio 2015\Projects\FamilyTree\Tests\Tee.FamilyApp.Tests\obj\Debug\Tee.FamilyApp.Tests.dll
-Z:\Users\Tee\Documents\Visual Studio 2015\Projects\FamilyTree\Tests\Tee.FamilyApp.Tests\obj\Debug\Tee.FamilyApp.Tests.pdb
